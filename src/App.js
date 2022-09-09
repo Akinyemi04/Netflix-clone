@@ -1,23 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Banner from './Banner';
+import Develop from './Develop';
+import requests from './request';
+import Header from './Header';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header/>
+      <Banner/>
+      <Develop category='NETFLIX ORIGINAL' url={requests.fetchNetflixOriginal} islarge/>
+      <Develop category='Trending Now' url={requests.fetchTrending}/>
+      <Develop category='Top Rated' url={requests.fetchTopRated}/>
+      <Develop category='Action Movies' url={requests.fetchActionMovie}/>
+      <Develop category='Comedy Movies' url={requests.fetchComedyMovies}/>
+      <Develop category='Horror Movies' url={requests.fetchHorrorMovies}/>
+      <Develop category='Documentaries' url={requests.fetchDomentaries}/>
     </div>
   );
 }
