@@ -6,6 +6,7 @@ const Develop = (props) => {
   const[condition,setCondition]= useState(false)
   const[url,setUrl]= useState(null)
     const[data,...others]=useFetch(props.url)
+    console.log(others)
     const option={
       height:'70%',
       width:'100%',
@@ -42,8 +43,11 @@ const Develop = (props) => {
           { data && data.map((val)=>{
             if(val.poster_path && val.backdrop_path){
               return(
-                 <img onClick={()=>{handleClick(val)}} className={` ${props.islarge && 'large' }`} key={val.id} src={`${base_url}${props.islarge? val.poster_path:val.backdrop_path}`}/>
+                 <img alt='' onClick={()=>{handleClick(val)}} className={` ${props.islarge && 'large' }`} key={val.id} src={`${base_url}${props.islarge? val.poster_path:val.backdrop_path}`}/>
               )
+            }
+            else{
+              return(<span></span>)
             }
           })}
         </div>

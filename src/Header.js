@@ -29,7 +29,7 @@ const Header = () => {
         return ()=>{
             window.removeEventListener('scroll',null)
         };
-    },[window])
+    },[windows])
   return (
     <div className={`header ${scroll && 'header_scroll'}`}>
         <img src={netflix} className='netflix' alt="Netflix Logo"  />
