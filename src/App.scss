@@ -139,14 +139,20 @@
     }
     .banner{
         section{
+            background-size: contain;
+            height: 25vh;
             p{
                 font-size: small;
+                width: 68vw;
             }
             .banner_button{
                 button{
                     font-weight: 600;
                     padding: 0 1rem;
                 }
+            }
+            .empty{
+                width: 100vw;
             }
         }
     }

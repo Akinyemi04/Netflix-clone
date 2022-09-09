@@ -133,12 +133,20 @@
   .App .header .avatar {
     width: 7vw;
   }
+  .banner section {
+    background-size: contain;
+    height: 25vh;
+  }
   .banner section p {
     font-size: small;
+    width: 68vw;
   }
   .banner section .banner_button button {
     font-weight: 600;
     padding: 0 1rem;
+  }
+  .banner section .empty {
+    width: 100vw;
   }
   h1 {
     font-size: 1.5em;
