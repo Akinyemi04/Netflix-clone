@@ -134,8 +134,9 @@
     width: 7vw;
   }
   .banner section {
+    padding-top: 7vh;
     background-size: contain;
-    height: 25vh;
+    height: 23vh;
   }
   .banner section p {
     font-size: small;
