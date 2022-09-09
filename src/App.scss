@@ -126,6 +126,13 @@
 }
 @media screen and (max-width:'440px') {
     .App{
+        .develop{
+            .image{
+                .large{
+                    height: 25vh;
+                }
+            }
+        }
         .header{
             padding-top: 0;
             height: 4vh;
