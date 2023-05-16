@@ -14,7 +14,7 @@ const Develop = (props) => {
       }
     }
     const base_url ='https://image.tmdb.org/t/p/original/'
-
+    console.log(others)
     function handleClick(val){
       if(condition){
         setCondition(false)
@@ -24,7 +24,6 @@ const Develop = (props) => {
         .then((url)=>{
           const urlParam = new URLSearchParams(new URL(url).search)
           setUrl(urlParam.get('v'))
-          //console.log(urlParam.get('v'))
           setCondition(true)
         })
         .catch((err)=>{
