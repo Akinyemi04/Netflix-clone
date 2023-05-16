@@ -6,7 +6,6 @@ const Develop = (props) => {
   const[condition,setCondition]= useState(false)
   const[url,setUrl]= useState(null)
     const[data,...others]=useFetch(props.url)
-    console.log(others)
     const option={
       height:'70%',
       width:'100%',

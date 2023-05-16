@@ -33,6 +33,9 @@
 .App .develop {
   color: white;
 }
+.App .develop h1 {
+  padding-left: 2vw;
+}
 .App .develop .image {
   display: flex;
   overflow-y: hidden;
@@ -45,14 +48,16 @@
      object-fit: contain;
   width: 100%;
   height: 17vh;
+  cursor: pointer;
   transition: transform 0.5s ease-in;
   margin-right: 0.5vw;
 }
 .App .develop .image img:hover {
-  transform: scale(1.1);
+  transform: scale(1.04);
 }
 .App .develop .image .large {
   height: 40vh;
+  cursor: pointer;
 }
 .App .develop .image::-webkit-scrollbar {
   display: none;
@@ -123,8 +128,12 @@
   }
 }
 @media screen and (max-width: 440px) {
+  .App .develop .image img {
+    margin-left: 2vw;
+  }
   .App .develop .image .large {
     height: 25vh;
+    margin-right: 2vw;
   }
   .App .header {
     padding-top: 0;
